@@ -1,0 +1,199 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    background-color: hsl(223, 19%, 93%);
+}
+
+.comment-section {
+    width: 70%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.comment-box {
+    width: 70%;
+    height: 17%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.comment-likes {
+    display: flex;
+    width: 10%;
+    height: 80%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.comment-text {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.comment-text header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-header {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.replies-box {
+    margin-left: 5.5rem;
+    width: 65%;
+}
+
+.add-comment-section {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.comment-likes>button {
+    border: 0;
+    background: 0;
+    cursor: pointer;
+}
+
+.comment-likes>span {
+    color: hsl(238, 40%, 52%);
+    font-family: Rubik;
+    font-size: 18px;
+}
+
+.commentDate {
+    color: hsl(211, 10%, 45%);
+}
+
+.replyBtn,
+.editBtn {
+    border: 0;
+    background: 0;
+    font-family: Rubik;
+    font-size: 15px;
+    color: hsl(238, 40%, 52%);
+    cursor: pointer;
+}
+
+.deleteBtn {
+    border: 0;
+    background: 0;
+    font-size: 15px;
+    color: hsl(358, 79%, 66%);
+    font-family: Rubik;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#send {
+    font-size: 17px;
+    padding: 10px 25px;
+    border-radius: 5.5px;
+    border: 0;
+    background-color: hsl(238, 40%, 52%);
+    color: white;
+    font-family: Rubik;
+    transition: all 0.5 linear;
+    cursor: pointer;
+}
+
+#send:hover {
+    background-color: white;
+    color: hsl(238, 40%, 52%);
+}
+
+#newCommentTxt {
+    font-size: 15px;
+    color: hsl(238, 40%, 52%);
+    font-family: Rubik;
+    font-style: italic;
+    font-weight: 500;
+}
+
+textarea {
+    border-radius: 12px;
+    border-color: hsl(238, 40%, 52%);
+}
+
+.query {
+    width: 19rem;
+    height: 12.5rem;
+    background-color: white;
+    border-radius: 0.9rem;
+    position: absolute;
+    top: 15rem;
+    left: 45rem;
+
+    transform: scale(1.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.delete-btn,
+.cancel-btn {
+    width: 30%;
+    font-size: 16px;
+    border: 0;
+    border-radius: 0.2em;
+    color: white;
+    font-family: Rubik;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background-color: hsl(358, 79%, 66%);
+    transition: all 0.4 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.delete-btn:hover {
+    background-color: hsl(238, 40%, 52%);
+    color: hsl(358, 79%, 66%);
+}
+
+.cancel-btn {
+    background-color: hsl(211, 10%, 45%);
+    transition: all 0.4 cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.cancel-btn:hover {
+    background-color: hsl(238, 40%, 52%);
+    color: hsl(211, 10%, 45%);
+}
+
+.active {
+    filter: blur(10px);
+
+}
+
+/* .blur {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+} */
